@@ -1,12 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Festivals from './components/festivals';
+import React from "react";
+import MainComponent from "./components/mainComponent";
 
 function App() {
-  return (
-    <Festivals></Festivals>
-  );
+  return <MainComponent></MainComponent>;
 }
 
 export default App;

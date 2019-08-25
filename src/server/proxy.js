@@ -15,7 +15,7 @@ app.get("/festivals", (req, res) => {
     if (error || response.statusCode !== 200) {
       return res.status(500).json({
         type: "error",
-        message: `Something wrong: ${error.message || "unknown error"}`
+        message: `Something wrong: ${error ? error.message : "unknown error"}`
       });
     }
     res.json(JSON.parse(body));
