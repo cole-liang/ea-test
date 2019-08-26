@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainComponent component test should render MainComponent 1`] = `
+<div>
+  Cannot load data, please refresh the page
+</div>
+`;

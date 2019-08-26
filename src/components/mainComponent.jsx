@@ -10,15 +10,8 @@ class MainComponent extends Component {
 
   async componentDidMount() {
     const festivals = await festivalsAPI.getFestivals();
-    console.log(festivals);
-    console.log(typeof festivals);
     this.setState({ festivals });
   }
-
-  // componentDidMount() {
-  //   const data = require("../resourses/mockFestivals.json");
-  //   this.setState({ festivals: data });
-  // }
 
   // To flatten the data by spreading data in festivals array
   // flattenedData: [ { name: bandNameStr, recordLabel: labelStr, festivalName: fesNameStr} ]
@@ -65,7 +58,7 @@ class MainComponent extends Component {
     let bandOccurance = new Set();
 
     flattenedData.forEach(item => {
-      // If recordLabel exists, add bandName to the set
+      // If recordLabel exists(not empty string or undefined), add bandName to the set
       if (!!item.recordLabel) bandOccurance.add(item.name);
 
       if (!Object.keys(recordLabel_bands).includes(item.recordLabel))
@@ -122,11 +115,13 @@ class MainComponent extends Component {
     result = this.sortData(result, ["recordLabel"]);
 
     // Add bands without record labels at the end of the result
-    if (result_noRecordLabel.length !== 0) result.push(result_noRecordLabel);
+    if (result_noRecordLabel.bands.length !== 0)
+      result.push(result_noRecordLabel);
 
     return result;
   };
 
+  // Sort data in ascending order by columns
   sortData = (data, columns) => {
     return _.orderBy(data, columns);
   };
@@ -159,6 +154,10 @@ class MainComponent extends Component {
 
   render() {
     const { festivals } = this.state;
+
+    if (festivals === "" || festivals.length === 0)
+      return <div>Cannot load data, please refresh the page</div>;
+
     // Format original data to the structure required
     const formatedItems = this.transformFormat(festivals);
 

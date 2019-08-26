@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemList component test should render ItemList 1`] = `
+<ul>
+  <div
+    key="LOL-palooza"
+  >
+    LOL-palooza
+  </div>
+  <ItemList
+    list={
+      Array [
+        Object {
+          "name": "Winter Primates",
+          "recordLabel": "",
+        },
+        Object {
+          "name": "Frank Jupiter",
+          "recordLabel": "Pacific Records",
+        },
+        Object {
+          "name": "Jill Black",
+          "recordLabel": "Fourth Woman Records",
+        },
+        Object {
+          "name": "Werewolf Weekday",
+          "recordLabel": "XS Recordings",
+        },
+      ]
+    }
+  />
+  <div
+    key="Small Night In"
+  >
+    Small Night In
+  </div>
+  <ItemList
+    list={
+      Array [
+        Object {
+          "name": "Squint-281",
+          "recordLabel": "Outerscope",
+        },
+        Object {
+          "name": "The Black Dashes",
+          "recordLabel": "Fourth Woman Records",
+        },
+        Object {
+          "name": "Green Mild Cold Capsicum",
+          "recordLabel": "Marner Sis. Recording",
+        },
+        Object {
+          "name": "Yanke East",
+          "recordLabel": "MEDIOCRE Music",
+        },
+        Object {
+          "name": "Wild Antelope",
+          "recordLabel": "Marner Sis. Recording",
+        },
+      ]
+    }
+  />
+  <div
+    key="Trainerella"
+  >
+    Trainerella
+  </div>
+  <ItemList
+    list={
+      Array [
+        Object {
+          "name": "Wild Antelope",
+          "recordLabel": "Still Bottom Records",
+        },
+        Object {
+          "name": "Manish Ditch",
+          "recordLabel": "ACR",
+        },
+        Object {
+          "name": "Adrian Venti",
+          "recordLabel": "Monocracy Records",
+        },
+        Object {
+          "name": "YOUKRANE",
+          "recordLabel": "Anti Records",
+        },
+      ]
+    }
+  />
+  <div
+    key="Twisted Tour"
+  >
+    Twisted Tour
+  </div>
+  <ItemList
+    list={
+      Array [
+        Object {
+          "name": "Summon",
+          "recordLabel": "Outerscope",
+        },
+        Object {
+          "name": "Auditones",
+          "recordLabel": "Marner Sis. Recording",
+        },
+        Object {
+          "name": "Squint-281",
+        },
+      ]
+    }
+  />
+  <ItemList
+    list={
+      Array [
+        Object {
+          "name": "Critter Girls",
+          "recordLabel": "ACR",
+        },
+        Object {
+          "name": "Propeller",
+          "recordLabel": "Pacific Records",
+        },
+      ]
+    }
+  />
+</ul>
+`;
