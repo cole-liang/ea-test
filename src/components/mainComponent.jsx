@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+import ItemList from "./itemList";
 import * as festivalsAPI from "../services/festivalsService";
 import * as _ from "lodash";
-import ItemList from "./itemList";
 
+// For data having recordLabel(not empty/undefined), the output will
+// strictly follow the instruction.
+// For data not having recordLabel, I add a 'No Specified Record'
+// section at the end of the normal output
 class MainComponent extends Component {
   state = {
     festivals: []
@@ -14,7 +18,7 @@ class MainComponent extends Component {
   }
 
   // To flatten the data by spreading data in festivals array
-  // flattenedData: [ { name: bandNameStr, recordLabel: labelStr, festivalName: fesNameStr} ]
+  // flattenedData: [ { name: bandNameStr, recordLabel: labelStr, festivalName: fesNameStr } ]
   flattenData = festivals => {
     let flattenedData = [];
 

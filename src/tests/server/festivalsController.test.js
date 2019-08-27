@@ -1,7 +1,6 @@
 const festivalsController = require("../../server/festivalsController");
 const mockData = require("../../resourses/festivalsForTest");
 const mockAxios = require("axios");
-jest.mock("axios");
 
 describe("Server side: festivalsController test", () => {
   const controller = festivalsController("Mock_URL");

@@ -14,7 +14,7 @@
   "scripts": {
     "client": "react-scripts start",
     "server": "nodemon ./src/server/proxy.js",
-    "start": "concurrently -- kill-others \"npm run server\" \"npm run client\"",
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

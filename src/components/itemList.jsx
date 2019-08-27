@@ -1,5 +1,6 @@
 import React from "react";
 
+// A recursive React component to display items
 const ItemList = ({ list }) => {
   return (
     <ul>
