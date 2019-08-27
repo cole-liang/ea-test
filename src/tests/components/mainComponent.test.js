@@ -3,6 +3,8 @@ import { shallow } from "enzyme";
 import MainComponent from "./../../components/mainComponent";
 import * as data from "../../resourses/festivalsForTest";
 
+jest.unmock("axios");
+
 describe("MainComponent component test", () => {
   const wrapper = shallow(<MainComponent></MainComponent>);
 

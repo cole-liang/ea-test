@@ -2,6 +2,12 @@
 
 exports[`MainComponent component test should render MainComponent 1`] = `
 <div>
-  Cannot load data, please refresh the page
+  Cannot load data, please refresh the page later
+</div>
+`;
+
+exports[`MainComponent component test should render MainComponent without receiving data 1`] = `
+<div>
+  Cannot load data, please refresh the page later
 </div>
 `;

@@ -155,8 +155,8 @@ class MainComponent extends Component {
   render() {
     const { festivals } = this.state;
 
-    if (festivals === "" || festivals.length === 0)
-      return <div>Cannot load data, please refresh the page</div>;
+    if (typeof festivals === "string" || festivals.length === 0)
+      return <div>Cannot load data, please refresh the page later</div>;
 
     // Format original data to the structure required
     const formatedItems = this.transformFormat(festivals);
