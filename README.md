@@ -23,6 +23,8 @@ This project is created with Create React App. Other tools and libraries used in
 
 * **Jest, Enzyme**   ==>   To test the components
 
+* **Nodemon**   ==>   To better debug server development 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
